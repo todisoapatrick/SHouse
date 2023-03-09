@@ -1,0 +1,104 @@
+.landing{
+  .navbar{
+    @include navbar-component;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    .logo{
+      user-select: none;
+      .logo-content{
+        @include logo;
+        font-weight: 600;
+        color:var(--dark);
+        .logo-part{
+          color:var(--primary);
+        }
+        .logo-house{
+          font-size: 18px;
+          margin:-2px 2px 0 0;
+        }
+      }
+    }
+
+    .authentication{
+     Button{
+       font-size: 10px;
+       margin: 0 5px;
+       border-radius: 1em;
+      }
+    }
+  }
+
+  .landing-header{
+    @include full-view;
+    @include around-element;
+    flex-flow: row wrap;
+    .search_house{
+      height: 450px;
+      width: auto;
+    }
+
+    .header_text{
+      max-width: 600px;
+      .header_title{
+        .title_colored{
+          color: var(--primary);
+        }
+      }
+
+      .header_content{
+        color: var(--gray);
+        font-size: 18px;
+        font-weight: 550;
+      }
+      Button{
+        border-radius: 2em;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .landing-search{
+    .search_title{
+      text-align: center;
+      margin-top: 10%;
+      .search_colored{
+        color: var(--primary);
+      }
+    }
+    .search_bar{
+      width: 100%;
+      height: 80px;
+      @include center-element;
+      margin: 10px 0;
+    }
+
+    .search_result{
+      @include around-element;
+      flex-flow: wrap;
+      margin: 5% 0;
+      .result_cards{
+        margin: 10px;
+      }
+    }
+  }
+
+  .landing-footer{
+    height: 400px;
+    background: var(--dark);
+    padding: 20px;
+    .footer_title{
+      color: var(--light);
+      text-align: center;
+    }
+    .footer_content{
+      color: var(--light);
+      text-align: center;
+    }
+
+    .footer_copyright{
+      color: var(--light);
+      text-align: center;
+    }
+  }
+}

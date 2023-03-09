@@ -1,0 +1,19 @@
+.admindash{
+  .admin_appbar{
+    background: var(--primary);
+  }
+  .logo_text{
+    width: 500px;
+  }
+  .Tabs{
+    // border: 1px solid red;
+    width: 100%;
+    padding: 0 7%;
+  }
+  .admindash_component{
+      .admindash_content {
+        height: 90vh;
+        @include center-element;
+      }
+  }
+}

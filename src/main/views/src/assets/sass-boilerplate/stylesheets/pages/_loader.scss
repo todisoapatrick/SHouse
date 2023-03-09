@@ -1,0 +1,51 @@
+.loader{
+  @include full-view;
+  @include center-element;
+  flex-direction: column;
+  background: var(--light);
+  svg{
+    height: 80px;
+    width: auto;
+    fill: var(--light);
+    stroke-width: 10px;
+    stroke:var(--primary);
+    stroke-dasharray: 500;
+    stroke-linejoin: round;
+    animation: dash 2s linear infinite;
+  }
+
+  h2{
+    font-weight: 600;
+    span{
+      color:var(--primary);
+    }
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+/*  *{
+    box-sizing: border-box
+  }
+  .wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    .rubik-loader{
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }*/
+}

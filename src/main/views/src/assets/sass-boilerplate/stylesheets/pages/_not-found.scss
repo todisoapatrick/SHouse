@@ -1,0 +1,26 @@
+.not-found{
+  @include full-view;
+  @include around-element;
+  flex-flow: row wrap;
+  .lost_man{
+    height: 450px;
+    width: auto;
+  }
+
+  .not-found-content{
+    max-width: 400px;
+    @include center-element;
+    flex-direction: column;
+    h1{
+      color: var(--primary);
+    }
+
+    p{
+      text-align: center;
+      a{
+        color: var(--primary);
+        text-decoration: none;
+      }
+    }
+  }
+}

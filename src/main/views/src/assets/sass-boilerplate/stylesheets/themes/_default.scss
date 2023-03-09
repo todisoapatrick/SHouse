@@ -1,0 +1,23 @@
+:root{
+  --primary:#0071c2;
+  --dark:#202020;
+  --light:#fefefe;
+  --gray:#9e9e9e;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+  &:hover {
+    background: #0071c285;
+  }
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+}

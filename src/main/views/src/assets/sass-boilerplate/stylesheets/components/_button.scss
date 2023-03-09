@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@mixin high-button{
+  margin: 3px;
+  font-weight: 550;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 1px solid var(--primary);
+  border-radius: 0.5em;
+  color: var(--light);
+  text-decoration: none;
+  .icon-button{
+    margin-right: 3px;
+  }
+  //:hover{
+  //  background: var(--light);
+  //  color: var(--primary);
+  //  transition: all 0.3s ease-in;
+  //}
+}
+
+@mixin middle-button{
+  margin: 3px;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 1px solid var(--primary);
+  border-radius: 0.5em;
+  color: var(--primary);
+  text-decoration: none;
+  .icon-button{
+    margin-right: 3px;
+  }
+  //:hover{
+  //  background: var(--primary);
+  //  color: var(--light);
+  //  transition: all 0.3s ease-in;
+  //}
+}
+
+@mixin third-button{
+  margin: 3px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  color: var(--primary);
+  text-decoration: none;
+  .icon-button{
+    margin-right: 3px;
+  }
+}

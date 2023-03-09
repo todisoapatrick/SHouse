@@ -1,0 +1,33 @@
+.admin_discussion{
+  @include around-element;
+  flex-direction: row;
+  width: 95vw;
+  height: 550px;
+
+  .admin_list_discussion{
+    height: 100%;
+    width: 100%;
+    @include center-element;
+    border: 1px solid var(--gray);
+    border-radius: 1em;
+    margin: 0 3px;
+  }
+
+  .admin_component_discussion{
+    height: 100%;
+    width: 100%;
+    @include center-element;
+    border: 1px solid var(--gray);
+    border-radius: 1em;
+    margin: 0 3px;
+  }
+
+  .admin_details_discussion{
+    height: 100%;
+    width: 100%;
+    @include center-element;
+    background: 1px solid var(--gray);
+    border-radius: 1em;
+    margin: 0 3px;
+  }
+}

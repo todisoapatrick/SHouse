@@ -1,0 +1,42 @@
+.admin_location{
+  margin: 0;
+  padding: 0;
+  @include around-element;
+  flex-flow: wrap;
+  width: 95vw;
+  height: 550px;
+
+  .part0{
+    @include center-element;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    min-width: 300px;
+
+    .part1{
+      @include center-element;
+      border: 1px solid var(--gray);
+      border-radius: 1em;
+      height: 48%;
+      width: 100%;
+      margin-bottom: 3%;
+    }
+
+    .part2{
+      @include center-element;
+      border: 1px solid var(--gray);
+      border-radius: 1em;
+      height: 48%;
+      width: 100%;
+    }
+  }
+  .part3{
+    @include center-element;
+    border: 1px solid var(--gray);
+    border-radius: 1em;
+    height: 100%;
+    width: 30%;
+    min-width: 300px;
+    margin: 1%;
+  }
+}
